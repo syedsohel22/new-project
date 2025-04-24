@@ -2,7 +2,17 @@
 
 import Image from "next/image";
 
-export default function HomeCard({ title, description, imagePath }) {
+interface HomeCardProps {
+  title: string;
+  description: string;
+  imagePath: string;
+}
+
+export default function HomeCard({
+  title,
+  description,
+  imagePath,
+}: HomeCardProps) {
   return (
     <div className="block bg-white rounded-2xl shadow-md hover:shadow-xl mb-2 p-4 transition w-full sm:w-72">
       <div className="flex flex-col items-center text-center">
