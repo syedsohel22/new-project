@@ -115,13 +115,10 @@ export default function Home() {
             />
             <select className="w-full p-2 border rounded" required>
               <option value="">tournament type</option>
-              {/* 5side,7side,9side, 11 side
-               */}
               <option value="5side">5 side</option>
               <option value="7side">7 side</option>
               <option value="9side">9 side</option>
               <option value="11side">11 side</option>
-              <option value="defence">defence</option>
             </select>
             <button className="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded">
               Create
@@ -190,7 +187,6 @@ export default function Home() {
 
             <select className="w-full p-2 border rounded" required>
               <option value="">Player Position</option>
-              {/* Striker,winger, midfielder, defence, goalkeeper */}
               <option value="Striker">Striker</option>
               <option value="winger">winger</option>
               <option value="midfielder">midfielder</option>
