@@ -11,9 +11,19 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Footer from "./components/Footer";
-
+interface FeatureCardProps {
+  imageSrc: string;
+  title: string;
+  description: string;
+  linkHref: string;
+}
 // Reusable Card Component
-const FeatureCard = ({ imageSrc, title, description, linkHref }) => (
+const FeatureCard = ({
+  imageSrc,
+  title,
+  description,
+  linkHref,
+}: FeatureCardProps) => (
   <Link href={linkHref} className="block">
     <div className="bg-white rounded-lg shadow-md p-6 m-4 w-full sm:w-72 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
       <Image
