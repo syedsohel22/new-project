@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  external: ["swiper"],
+  reactStrictMode: true,
 };
 
 export default nextConfig;
