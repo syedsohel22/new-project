@@ -10,7 +10,6 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import Footer from "./components/Footer";
 interface FeatureCardProps {
   imageSrc: string;
   title: string;
@@ -246,7 +245,6 @@ const Home = () => {
           />
         </div>
       </main>
-      <Footer />
     </div>
   );
 };
